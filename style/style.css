@@ -48,6 +48,10 @@ body {
   min-height: 100vh;
 }
 
+a {
+  color :rgb(255, 230, 0)
+}
+
 /* Enhanced animated background */
 .animated-bg {
   position: fixed;
