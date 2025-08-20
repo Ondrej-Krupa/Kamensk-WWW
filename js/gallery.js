@@ -85,7 +85,15 @@ class GalleryManager {
       `;
     };
 
+    // Create overlay
+    const overlay = document.createElement('div');
+    overlay.className = 'gallery-overlay';
+    overlay.innerHTML = `
+      <div class="gallery-title-overlay">${image.title}</div>
+    `;
+
     item.appendChild(img);
+    item.appendChild(overlay);
     
     // Add click event
     item.addEventListener('click', () => this.openLightbox(index));
